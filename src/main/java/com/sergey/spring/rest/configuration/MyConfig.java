@@ -18,6 +18,7 @@ import java.util.Properties;
 @ComponentScan(basePackages = "com.sergey.spring.rest")
 @EnableWebMvc //В XML mvc:annotation-driven
 @EnableTransactionManagement//В XML tx:annotation-driven transaction-manager = ...
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class MyConfig {
 
     @Bean
